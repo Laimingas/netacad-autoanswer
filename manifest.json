@@ -8,20 +8,6 @@
     "scripting",
     "storage"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*.netacad.com/*"
-      ],
-      "js": [
-        "api.js",
-        "ui.js",
-        "scraper.js",
-        "content.js"
-      ],
-      "all_frames": true
-    }
-  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -34,10 +20,10 @@
   "commands": {
     "process-page-command": {
       "suggested_key": {
-        "default": "Alt+Shift+Q",
-        "mac": "Alt+Shift+Q"
+        "default": "Alt+M",
+        "mac": "Alt+M"
       },
-      "description": "Process Questions on this Page"
+      "description": "Process Current Question"
     }
   },
   "icons": {

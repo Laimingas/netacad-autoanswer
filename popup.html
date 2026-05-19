@@ -50,25 +50,13 @@
 <body>
   <h3>NetAcad AI Assistant</h3>
   
-  <label for="apiKey">Gemini API Key:</label>
-  <input type="password" id="apiKey" placeholder="Enter your Gemini API Key">
-  
-  <div style="margin: 10px 0 0 0; display: flex; align-items: center;">
-    <input type="checkbox" id="showAnswersToggle" checked style="margin-right: 6px;">
-    <label for="showAnswersToggle" style="cursor: pointer;">Show AI Answers</label>
-  </div>
-
-  <div style="margin: 10px 0 0 0; display: flex; align-items: center;">
-    <input type="checkbox" id="processOnSwitchToggle" checked style="margin-right: 6px;">
-    <label for="processOnSwitchToggle" style="cursor: pointer;">Process on Page Switch</label>
-  </div>
+  <label for="apiKey">OpenAI API Key:</label>
+  <input type="password" id="apiKey" placeholder="Enter your OpenAI API Key">
   
   <button id="saveKey">Save API Key</button>
-  
-  <button id="processPage">Process Questions on this Page</button>
 
   <div id="status"></div>
-  <small>You can press Alt+Shift+Q to process questions on the current page.</small>
+  <small>You can press Alt+M to process questions on the current page.</small>
 
   <script src="popup.js"></script>
 </body>
