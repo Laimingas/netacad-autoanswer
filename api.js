@@ -26,23 +26,7 @@ function extractOpenAiResponseText(data) {
   return "";
 }
 
-async function callOpenAi(prompt, apiKey, imageDataUrls = []) {
-  const input =
-    imageDataUrls.length > 0
-      ? [
-          {
-            role: "user",
-            content: [
-              { type: "input_text", text: prompt },
-              ...imageDataUrls.map((imageUrl) => ({
-                type: "input_image",
-                image_url: imageUrl,
-              })),
-            ],
-          },
-        ]
-      : prompt;
-
+async function callOpenAi(prompt, apiKey) {
   const response = await fetch(API_URL, {
     method: "POST",
     headers: {
@@ -51,7 +35,7 @@ async function callOpenAi(prompt, apiKey, imageDataUrls = []) {
     },
     body: JSON.stringify({
       model: OPENAI_MODEL,
-      input: input,
+      input: prompt,
     }),
   });
 
@@ -82,49 +66,7 @@ async function callOpenAi(prompt, apiKey, imageDataUrls = []) {
   return { text };
 }
 
-async function getAiMatchingAnswer(
-  question,
-  categories,
-  options,
-  apiKey,
-  imageDataUrls = [],
-) {
-  if (!apiKey) {
-    return "Error: OpenAI API Key not available. Please set it in the extension popup.";
-  }
-
-  let prompt = `Given the following matching question, match each category item to exactly one option item.
-Return only valid JSON. Do not include Markdown, explanations, comments, or any extra text.
-Return a JSON array of objects in this exact shape:
-[{"category":"exact category text","option":"exact option text"}]
-Use only category text from the Categories list below.
-Use only option text from the Options list below.
-Copy category and option text exactly as written.
-If image descriptions or images are provided, use them as part of the question context.
-
-Question:
-${question}
-
-Categories:
-`;
-  categories.forEach((category) => {
-    prompt += `${category}\n`;
-  });
-
-  prompt += "\nOptions:\n";
-  options.forEach((option) => {
-    prompt += `${option}\n`;
-  });
-
-  try {
-    const result = await callOpenAi(prompt, apiKey, imageDataUrls);
-    return result.error || result.text;
-  } catch (error) {
-    return "Error connecting to OpenAI API. Check console for details.";
-  }
-}
-
-async function getAiAnswer(question, answers, apiKey, imageDataUrls = []) {
+async function getAiAnswer(question, answers, apiKey) {
   if (!apiKey) {
     return "Error: OpenAI API Key not available. Please set it in the extension popup.";
   }
@@ -135,7 +77,6 @@ Otherwise, if it's a single-choice question, return only the text of the single 
 Return only answer text that appears in the Possible Answers list below.
 Copy the answer text exactly as it is written in the Possible Answers list.
 Do not include answer numbers, bullets, prefixes, explanations, punctuation you were not given, or any extra text.
-If image descriptions or images are provided, use them as part of the question context.
 
 Question:
 ${question}
@@ -147,7 +88,7 @@ Possible Answers:
   });
 
   try {
-    const result = await callOpenAi(prompt, apiKey, imageDataUrls);
+    const result = await callOpenAi(prompt, apiKey);
     return result.error || result.text;
   } catch (error) {
     return "Error connecting to OpenAI API. Check console for details.";

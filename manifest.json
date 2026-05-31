@@ -1,32 +1,28 @@
 {
   "manifest_version": 3,
-  "name": "NetAcad Scraper",
-  "version": "1.0",
-  "description": "Scrapes questions and answers from NetAcad and uses AI to suggest answers.",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage"
-  ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "48": "images/icon-48x48.png"
-    }
-  },
+  "name": "NetAcad AI Assistant",
+  "version": "1.0.0",
+  "description": "Scrapes NetAcad MCQ and selects answers via AI or question bank.",
+  "permissions": ["storage", "commands", "scripting", "activeTab"],
+  "host_permissions": ["https://api.openai.com/*"],
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
   },
   "commands": {
     "process-page-command": {
       "suggested_key": {
-        "default": "Alt+M",
-        "mac": "Alt+M"
+        "default": "Alt+M"
       },
-      "description": "Process Current Question"
+      "description": "Process current NetAcad question"
     }
   },
-  "icons": {
-    "48": "images/icon-48x48.png"
-  }
+  "web_accessible_resources": [
+    {
+      "resources": ["questions_bank.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

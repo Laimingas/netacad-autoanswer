@@ -14,13 +14,13 @@ if (!window.netacadProcessPageListenerAttached) {
       if (document.querySelector("app-root")) {
         if (typeof window.scrapeData === "function") {
           window
-            .scrapeData()
-            .then((result) => {
-              sendResponse({ success: true, result: result });
-            })
-            .catch((error) => {
-              sendResponse({ success: false, error: error.toString() });
-            });
+              .scrapeData()
+              .then((result) => {
+                sendResponse({ success: true, result: result });
+              })
+              .catch((error) => {
+                sendResponse({ success: false, error: error.toString() });
+              });
           return true; // Indicates that sendResponse will be called asynchronously
         } else {
           sendResponse({

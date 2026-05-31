@@ -36,28 +36,57 @@
       width: 100%;
       font-size: 15px;
     }
-    button:hover {
-      background-color: #0056b3;
-    }
+    button:hover { background-color: #0056b3; }
     #status {
       margin-top: 10px;
       text-align: center;
       font-size: 0.9em;
       color: #555;
     }
+    .mode {
+      margin-top: 12px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .mode-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
   </style>
 </head>
 <body>
-  <h3>NetAcad AI Assistant</h3>
-  
-  <label for="apiKey">OpenAI API Key:</label>
-  <input type="password" id="apiKey" placeholder="Enter your OpenAI API Key">
-  
-  <button id="saveKey">Save API Key</button>
+<h3>NetAcad Assistant</h3>
 
-  <div id="status"></div>
-  <small>You can press Alt+M to process questions on the current page.</small>
+<div class="mode">
+  <div><strong>Answer source</strong></div>
 
-  <script src="popup.js"></script>
+  <label class="mode-row">
+    <input type="radio" name="answerMode" value="auto" checked />
+    Auto (bank with AI fallback)
+  </label>
+
+  <label class="mode-row">
+    <input type="radio" name="answerMode" value="bank" />
+    Question bank only
+  </label>
+
+  <label class="mode-row">
+    <input type="radio" name="answerMode" value="ai" />
+    AI only
+  </label>
+</div>
+
+<label for="apiKey">OpenAI API Key:</label>
+<input type="password" id="apiKey" placeholder="Enter your OpenAI API Key" />
+<button id="saveKey">Save settings</button>
+
+<div id="status"></div>
+<small>You can press Alt+M to process questions on the current page.</small>
+
+<script src="popup.js"></script>
 </body>
-</html> 
+</html>

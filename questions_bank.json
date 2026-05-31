@@ -1,0 +1,405 @@
+[
+  {
+    "number": 1,
+    "question": "A client packet is received by a server. The packet has a destination port number of 22. What service is the client requesting?",
+    "answers": [
+      "SSH"
+    ]
+  },
+  {
+    "number": 2,
+    "question": "Refer to the exhibit. What does the value of the window size specify?",
+    "answers": [
+      "the amount of data that can be sent before an acknowledgment is required"
+    ]
+  },
+  {
+    "number": 3,
+    "question": "To which TCP port group does the port 414 belong?",
+    "answers": [
+      "well-known"
+    ]
+  },
+  {
+    "number": 4,
+    "question": "Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?",
+    "answers": [
+      "The administrator must first enter privileged EXEC mode before issuing the command."
+    ]
+  },
+  {
+    "number": 5,
+    "question": "What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?",
+    "answers": [
+      "if there is connectivity with the destination device"
+    ]
+  },
+  {
+    "number": 6,
+    "question": "What is a characteristic of a switch virtual interface (SVI)?​",
+    "answers": [
+      "An SVI is created in software and requires a configured IP address and a subnet mask in order to provide remote access to the switch."
+    ]
+  },
+  {
+    "number": 7,
+    "question": "Match the descriptions to the terms. (Not all options are used.)",
+    "answers": [
+      "the part of the operating system that interfaces with applications and the user -> shell",
+      "users interact with the operating system by typing commands -> CLI",
+      "enables the user to interact with the operating system by pointing and clicking -> GUI",
+      "the part of the OS that interacts directly with the device hardware -> kernel"
+    ]
+  },
+  {
+    "number": 8,
+    "question": "What happens when a switch receives a frame and the calculated CRC value is different than the value that is in the FCS field?",
+    "answers": [
+      "The switch drops the frame."
+    ]
+  },
+  {
+    "number": 9,
+    "question": "Two network engineers are discussing the methods used to forward frames through a switch. What is an important concept related to the cut-through method of switching?",
+    "answers": [
+      "Packets can be relayed with errors when fast-forward switching is used."
+    ]
+  },
+  {
+    "number": 10,
+    "question": "Which two issues can cause both runts and giants in Ethernet networks? (Choose two.)",
+    "answers": [
+      "half-duplex operations",
+      "a malfunctioning NIC"
+    ]
+  },
+  {
+    "number": 11,
+    "question": "Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
+    "answers": [
+      "enables IPv4 and IPv6 to utilize the same physical medium",
+      "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
+      "handles communication between upper layer networking software and Ethernet NIC hardware",
+      "adds Ethernet control information to network protocol data"
+    ]
+  },
+  {
+    "number": 12,
+    "question": "Which two commands could be used to check if DNS name resolution is working properly on a Windows PC? (Choose two.)",
+    "answers": [
+      "nslookup cisco.com",
+      "ping cisco.com"
+    ]
+  },
+  {
+    "number": 13,
+    "question": "A small advertising company has a web server that provides critical business service. The company connects to the Internet through a leased line service to an ISP. Which approach best provides cost effective redundancy for the Internet connection?",
+    "answers": [
+      "Add a connection to the Internet via a DSL line to another ISP."
+    ]
+  },
+  {
+    "number": 14,
+    "question": "Only employees connected to IPv6 interfaces are having difficulty connecting to remote networks. The analyst wants to verify that IPv6 routing has been enabled. What is the best command to use to accomplish the task?",
+    "answers": [
+      "show running-config"
+    ]
+  },
+  {
+    "number": 15,
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
+    "answers": [
+      "192.168.235.234"
+    ]
+  },
+  {
+    "number": 16,
+    "question": "Match the command with the device mode at which the command is entered. (Not all options are used.)\n\n\nPlace the options in the following order:",
+    "answers": [
+      "login -> R1(config-line)#",
+      "ip address 192.168.4.4 255.255.255.0 -> R1(config-if)#",
+      "service password-encryption -> R1(config)#",
+      "enable -> R1>",
+      "copy running-config startup-config -> R1#"
+    ]
+  },
+  {
+    "number": 17,
+    "question": "A router boots and enters setup mode. What is the reason for this?",
+    "answers": [
+      "The configuration file is missing from NVRAM."
+    ]
+  },
+  {
+    "number": 18,
+    "question": "What service is provided by POP3?",
+    "answers": [
+      "Retrieves email from the server by downloading the email to the local mail application of the client."
+    ]
+  },
+  {
+    "number": 19,
+    "question": "Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?",
+    "answers": [
+      "peer-to-peer"
+    ]
+  },
+  {
+    "number": 20,
+    "question": "Which command is used to manually query a DNS server to resolve a specific host name?",
+    "answers": [
+      "nslookup"
+    ]
+  },
+  {
+    "number": 21,
+    "question": "Which PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?",
+    "answers": [
+      "segment"
+    ]
+  },
+  {
+    "number": 22,
+    "question": "Which two OSI model layers have the same functionality as two layers of the TCP/IP model? (Choose two.)",
+    "answers": [
+      "network",
+      "transport"
+    ]
+  },
+  {
+    "number": 24,
+    "question": "Network information:",
+    "answers": [
+      "verifying that there is connectivity to the internet"
+    ]
+  },
+  {
+    "number": 25,
+    "question": "Which two ICMP messages are used by both IPv4 and IPv6 protocols? (Choose two.)​",
+    "answers": [
+      "protocol unreachable",
+      "route redirection"
+    ]
+  },
+  {
+    "number": 26,
+    "question": "A network technician types the command ping 127.0.0.1 at the command prompt on a computer. What is the technician trying to accomplish?",
+    "answers": [
+      "testing the integrity of the TCP/IP stack on the local machine"
+    ]
+  },
+  {
+    "number": 27,
+    "question": "Although CSMA/CD is still a feature of Ethernet, why is it no longer necessary?",
+    "answers": [
+      "the use of full-duplex capable Layer 2 switches"
+    ]
+  },
+  {
+    "number": 28,
+    "question": "What does a router do when it receives a Layer 2 frame over the network medium?",
+    "answers": [
+      "de-encapsulates the frame"
+    ]
+  },
+  {
+    "number": 29,
+    "question": "Which two acronyms represent the data link sublayers that Ethernet relies upon to operate? (Choose two.)",
+    "answers": [
+      "LLC",
+      "MAC"
+    ]
+  },
+  {
+    "number": 30,
+    "question": "A network team is comparing topologies for connecting on a shared media. Which physical topology is an example of a hybrid topology for a LAN?",
+    "answers": [
+      "extended star"
+    ]
+  },
+  {
+    "number": 31,
+    "question": "Given network 172.18.109.0, which subnet mask would be used if 6 host bits were available?",
+    "answers": [
+      "255.255.255.192"
+    ]
+  },
+  {
+    "number": 32,
+    "question": "Three devices are on three different subnets. Match the network address and the broadcast address with each subnet where these devices are located. (Not all options are used.)",
+    "answers": [
+      "Subnet 2 network number -> 192.168.10.16",
+      "Subnet 1 broadcast address -> 192.168.10.79",
+      "Subnet 3 broadcast address -> 192.168.10.39",
+      "Subnet 2 broadcast address -> 192.168.10.19",
+      "Subnet 1 network number -> 192.168.10.64",
+      "Subnet 3 network number -> 192.168.10.32"
+    ]
+  },
+  {
+    "number": 33,
+    "question": "What type of address is 198.133.219.162?",
+    "answers": [
+      "public"
+    ]
+  },
+  {
+    "number": 34,
+    "question": "What does the IP address 192.168.1.15/29 represent?",
+    "answers": [
+      "broadcast address"
+    ]
+  },
+  {
+    "number": 35,
+    "question": "Why is NAT not needed in IPv6?​",
+    "answers": [
+      "Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.​"
+    ]
+  },
+  {
+    "number": 36,
+    "question": "What routing table entry has a next hop address associated with a destination network?",
+    "answers": [
+      "remote routes"
+    ]
+  },
+  {
+    "number": 37,
+    "question": "Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?",
+    "answers": [
+      "destination IPv4 address"
+    ]
+  },
+  {
+    "number": 38,
+    "question": "If the default gateway is configured incorrectly on the host, what is the impact on communications?",
+    "answers": [
+      "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks."
+    ]
+  },
+  {
+    "number": 39,
+    "question": "Which is the compressed format of the IPv6 address fe80:0000:0000:0000:0220:0b3f:f0e0:0029?",
+    "answers": [
+      "fe80::220:b3f:f0e0:29"
+    ]
+  },
+  {
+    "number": 40,
+    "question": "Refer to the exhibit. A user issues the command netstat –r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?",
+    "answers": [
+      "fe80::30d0:115:3f57:fe4c/128"
+    ]
+  },
+  {
+    "number": 41,
+    "question": "What type of IPv6 address is represented by ::1/128?",
+    "answers": [
+      "loopback"
+    ]
+  },
+  {
+    "number": 42,
+    "question": "Which statement describes network security?",
+    "answers": [
+      "It ensures sensitive corporate data is available for authorized users."
+    ]
+  },
+  {
+    "number": 44,
+    "question": "What characteristic describes spyware?",
+    "answers": [
+      "software that is installed on a user device and collects information about the user"
+    ]
+  },
+  {
+    "number": 45,
+    "question": "Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?",
+    "answers": [
+      "The switch will forward the frame to all ports except port 4."
+    ]
+  },
+  {
+    "number": 46,
+    "question": "Which destination address is used in an ARP request frame?",
+    "answers": [
+      "FFFF.FFFF.FFFF"
+    ]
+  },
+  {
+    "number": 47,
+    "question": "Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC3. In this scenario, what will happen next?",
+    "answers": [
+      "RT1 will send an ARP reply with its own Fa0/0 MAC address."
+    ]
+  },
+  {
+    "number": 48,
+    "question": "A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?",
+    "answers": [
+      "a user who is trying to guess a password to access the router"
+    ]
+  },
+  {
+    "number": 49,
+    "question": "Which statement describes the characteristics of packet-filtering and stateful firewalls as they relate to the OSI model?",
+    "answers": [
+      "A packet-filtering firewall typically can filter up to the transport layer, whereas a stateful firewall can filter up to the session layer."
+    ]
+  },
+  {
+    "number": 50,
+    "question": "What are two ways to protect a computer from malware? (Choose two.)",
+    "answers": [
+      "Use antivirus software.",
+      "Keep software up to date."
+    ]
+  },
+  {
+    "number": 51,
+    "question": "The employees and residents of Ciscoville cannot access the Internet or any remote web-based services. IT workers quickly determine that the city firewall is being flooded with so much traffic that a breakdown of connectivity to the Internet is occurring. Which type of attack is being launched at Ciscoville?",
+    "answers": [
+      "DoS"
+    ]
+  },
+  {
+    "number": 52,
+    "question": "Which two statements describe the characteristics of fiber-optic cabling? (Choose two.)",
+    "answers": [
+      "Fiber-optic cabling does not conduct electricity.",
+      "Fiber-optic cabling is primarily used as backbone cabling."
+    ]
+  },
+  {
+    "number": 53,
+    "question": "What OSI physical layer term describes the measure of the transfer of bits across a medium over a given period of time?",
+    "answers": [
+      "throughput"
+    ]
+  },
+  {
+    "number": 54,
+    "question": "Refer to the exhibit. What is the maximum possible throughput between the PC and the server?",
+    "answers": [
+      "128 kb/s"
+    ]
+  },
+  {
+    "number": 55,
+    "question": "Match the description with the media. (Not all options are used.)\n\n\nPlace the options in the following order:",
+    "answers": [
+      "wireless -> This type of media provides the most mobility options.",
+      "coaxial -> Traditionally used for television but can now be used in a network to connect the customer location to the wiring of the customer premises.",
+      "optical fiber -> This type of media is used for high transmission speed and can also transfer data over long distances.",
+      "STP -> This type of copper media is used in industrial or similar environments where there is a lot of interference."
+    ]
+  },
+  {
+    "number": 56,
+    "question": "A Wireshark capture is shown with the Transmission Control Protocol section expanded. The item highlighted states Window size: 9017.",
+    "answers": [
+      "testing the integrity of the TCP/IP stack on the local machine"
+    ]
+  }
+]
